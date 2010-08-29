@@ -47,14 +47,14 @@ class Reghash
 	}
 	// END function hash()
 
-
+		// Thanks to Chris Newton <cnewton@barrettnewton.com> for this function
 		function _encode() { 
 			
 			$hour   = date("G"); // set to change every hour
 			$month = date("n");
 			$year  = date("Y"); 
 			
-			$data  = $hour.$this->data_rand1.$hour.$month.$this->data_rand2.$year; // minute
+			$data  = $hour.$this->data_rand1.$hour.$month.$this->data_rand2.$year;
 			
 			$base64 = base64_encode($this->rc4($this->salt,$data));
 			$base64url = strtr($base64, '+/=', ',_-');
