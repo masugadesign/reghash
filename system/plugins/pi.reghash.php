@@ -7,7 +7,7 @@ Last Modified: Aug 28 2010
 File: pi.reghash.php
 -----------------------------------------------------------
 Purpose: Generate hash for the 3rd segment of your member
-registration template. ALso generate the links and the check.
+registration template. Also generate the links and the check.
 =========================================================== */
 $plugin_info = array(
 	'pi_name'        => 'RegHash',
@@ -24,10 +24,10 @@ class Reghash
 
 	var $return_data = "";
 
-	public $member_tpl = 'members/register/';
-	public $salt = 'foobar123x!WeAreDev0';
-	public $data_rand1 = 'Xx7su2!';
-	public $data_rand2 = '2j&dh.T';
+	public $member_tpl = 'members/register/'; // register template group/template
+	public $salt = '1ofhd6vb'; // a string used to add extra randomness
+	public $data_rand1 = ''; // Can be left blank; used to 'pad' the register hash
+	public $data_rand2 = ''; // Can be left blank; used to 'pad' the register hash
 
 
   function link()
