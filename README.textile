@@ -1,0 +1,24 @@
+h1. RegHash
+
+Help stop bot signups. Make member registration page use a 3rd-segment hash like:
+
+http://site.com/members/register/349tgj459gh875gh
+
+1) 3rd segment must be present
+2) 3rd segment must match the current hash which changes (defaults to hour)
+
+This should help stop bot signups, especially when coupled with a simple registration captcha.
+
+h2. Requirements
+
+* ExpressionEngine 1.x
+
+h2. Installation
+
+This plugin comes with sample template to get you started. Alter a couple things at the top of the plugin to fit your needs.
+
+h2. Changelog
+
+*Version 0.5 (Aug 28 2010)*
+
+* Initial commit
